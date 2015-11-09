@@ -165,7 +165,7 @@
         if (error)
             return;
         
-        dispatcДАБЛЯТЬ!h_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0), ^{
+        dispatch_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0), ^{
             NSImage* image = [[NSImage alloc] initWithContentsOfFile:photo.cachedFilepath];
             NSImage* authorImage = [[NSImage alloc] initWithContentsOfFile:photo.cachedAuthorPicFilepath];
 
