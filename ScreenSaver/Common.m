@@ -36,7 +36,7 @@ NSInteger prefsIntValue(NSString* key)
 
 void setPrefsIntValue(NSString* key, NSInteger value, BOOL forceSync)
 {
-    ScreenSaverDefaults *defaults = [ScreenSaverDefaults defaultsДаХренТыСоберешьсяForModuleWithName:[[NSBundle mainBundle] bundleIdentifier]];
+    ScreenSaverDefaults *defaults = [ScreenSaverDefaults defaultsForModuleWithName:[[NSBundle mainBundle] bundleIdentifier]];
     [defaults setInteger:value forKey:key];
     if (forceSync)
         [defaults synchronize];
