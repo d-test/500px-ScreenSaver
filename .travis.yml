@@ -15,5 +15,6 @@ deploy:
 
 before_script: pod install
 script:
+  - xcodebuild -list
   - xcodebuild -workspace ScreenSaver.xcworkspace -scheme ScreenSaver
 
